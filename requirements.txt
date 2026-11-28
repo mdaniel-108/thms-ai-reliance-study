@@ -1,0 +1,11 @@
+# reproduce/reproduce_rq1_rq2.py needs only the Python standard library.
+numpy
+pandas
+scipy
+matplotlib
+statsmodels
+scikit-learn==1.9.1
+bambi==0.21.0
+pymc==6.4.0
+arviz
+openpyxl

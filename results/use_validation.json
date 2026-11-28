@@ -1,0 +1,116 @@
+{
+ "note": "Use classification and G0 validation; no correctness of any answer used.",
+ "answers_after_failure": 895,
+ "scorable": 587,
+ "forms": {
+  "full_program": 518,
+  "no_code": 204,
+  "proposal_applied_compiles": 69,
+  "proposal_not_applicable": 55,
+  "code_fragments_only": 40,
+  "proposal_applied_no_compile": 9
+ },
+ "decisions": 499,
+ "failures_with_scorable_answer_but_no_next_submission": 4,
+ "participants_with_decisions": 20,
+ "attribution_rule": {
+  "best_match": 416,
+  "applied_proposal": 66,
+  "not_used": 15,
+  "ambiguous": 2
+ },
+ "use": {
+  "unchanged": 470,
+  "not_used": 20,
+  "adapted": 9
+ },
+ "use_by_rule": {
+  "best_match": {
+   "unchanged": 410,
+   "adapted": 6
+  },
+  "not_used": {
+   "not_used": 15
+  },
+  "applied_proposal": {
+   "unchanged": 58,
+   "not_used": 5,
+   "adapted": 3
+  },
+  "ambiguous": {
+   "unchanged": 2
+  }
+ },
+ "scorable_answers_per_decision": {
+  "1": 440,
+  "2": 47,
+  "3": 7,
+  "4": 3,
+  "5": 2
+ },
+ "participants_with_ge6_decisions": 14,
+ "decisions_per_participant": [
+  2,
+  2,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  15,
+  25,
+  31,
+  31,
+  34,
+  36,
+  40,
+  42,
+  47,
+  49,
+  57,
+  61
+ ],
+ "not_used_participants": 11,
+ "G0": {
+  "applied_proposal_answers": 67,
+  "applied_classified_used": 0.9253731343283582,
+  "independent_accepted_pairs": 63,
+  "problems_with_pairs": 11,
+  "pairs_per_problem": {
+   "1": 18,
+   "9": 10,
+   "3": 6,
+   "10": 1,
+   "11": 1,
+   "12": 9,
+   "6": 5,
+   "7": 5,
+   "8": 5,
+   "13": 0,
+   "4": 1,
+   "5": 2
+  },
+  "convergence_source_a_usable": true,
+  "pairs_ge_080": 0.0,
+  "pairs_ge_099": 0.0,
+  "pair_similarity_p99": 0.752851711026616,
+  "rule_applied_lt_80pct": false,
+  "rule_pairs_080_gt_10pct": false,
+  "rule_pairs_099_gt_5pct": false,
+  "source_b": "pending: B2 correct programs vs these Accepted submissions (needs B2 scoring)"
+ },
+ "decision_similarity_deciles": [
+  0.0614,
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0
+ ]
+}

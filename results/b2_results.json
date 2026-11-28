@@ -1,0 +1,48 @@
+{
+ "generations": 468,
+ "aborted_by_server": {
+  "phi4-mini": 1
+ },
+ "compiled": 383,
+ "correct_generations": 19,
+ "per_model": {
+  "granite-code:8b": {
+   "cells": 39,
+   "mean_of_3": 0.0256,
+   "at_least_1_of_3": 0.0256,
+   "problems_solved_any_language": 1
+  },
+  "llama3.1:8b": {
+   "cells": 39,
+   "mean_of_3": 0.0171,
+   "at_least_1_of_3": 0.0513,
+   "problems_solved_any_language": 2
+  },
+  "phi4-mini": {
+   "cells": 39,
+   "mean_of_3": 0.0171,
+   "at_least_1_of_3": 0.0513,
+   "problems_solved_any_language": 2
+  },
+  "qwen2.5-coder:7b": {
+   "cells": 39,
+   "mean_of_3": 0.1026,
+   "at_least_1_of_3": 0.1538,
+   "problems_solved_any_language": 3
+  }
+ },
+ "problems_solved_by_any_model": [
+  1,
+  2,
+  9,
+  10
+ ],
+ "G0_source_b": {
+  "pairs": 83,
+  "problems": 2,
+  "usable": false,
+  "share_ge_080": 0.0,
+  "share_ge_099": 0.0,
+  "p99": 0.784
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "per_problem": {
+  "1": {
+   "edge_valid": 8,
+   "large_valid": 4,
+   "random_valid": 40,
+   "sample_valid": 2
+  },
+  "2": {
+   "edge_valid": 15,
+   "large_valid": 4,
+   "random_valid": 40,
+   "sample_valid": 3
+  },
+  "3": {
+   "edge_valid": 9,
+   "large_valid": 4,
+   "random_valid": 40,
+   "sample_valid": 3
+  },
+  "4": {
+   "edge_valid": 7,
+   "large_valid": 4,
+   "random_valid": 40,
+   "sample_valid": 2
+  },
+  "5": {
+   "edge_valid": 9,
+   "large_valid": 4,
+   "random_valid": 40,
+   "sample_valid": 2
+  },
+  "6": {
+   "edge_valid": 8,
+   "large_valid": 4,
+   "random_valid": 40,
+   "sample_valid": 1
+  },
+  "7": {
+   "edge_valid": 11,
+   "large_valid": 4,
+   "random_valid": 40,
+   "sample_valid": 4
+  },
+  "8": {
+   "edge_valid": 5,
+   "large_valid": 4,
+   "random_valid": 39,
+   "sample_valid": 2
+  },
+  "9": {
+   "edge_valid": 4,
+   "large_valid": 4,
+   "random_valid": 40,
+   "sample_valid": 2
+  },
+  "10": {
+   "edge_valid": 4,
+   "large_valid": 4,
+   "random_valid": 40,
+   "sample_valid": 1
+  },
+  "11": {
+   "edge_valid": 7,
+   "large_valid": 4,
+   "random_valid": 40,
+   "sample_valid": 3
+  },
+  "12": {
+   "edge_valid": 4,
+   "large_valid": 4,
+   "random_valid": 40,
+   "sample_valid": 2
+  },
+  "13": {
+   "edge_valid": 5,
+   "large_valid": 4,
+   "random_valid": 40,
+   "sample_valid": 1
+  }
+ },
+ "reasons": {
+  "1": {},
+  "2": {},
+  "3": {},
+  "4": {},
+  "5": {},
+  "6": {},
+  "7": {},
+  "8": {},
+  "9": {},
+  "10": {},
+  "11": {},
+  "12": {},
+  "13": {}
+ },
+ "total": {
+  "valid": 695
+ },
+ "note": "Strict per-problem validators from the public statements (code/tlt_pck_validate.py); generated inputs only."
+}

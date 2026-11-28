@@ -1,0 +1,521 @@
+{
+ "input_validation": {
+  "total": {
+   "valid": 696
+  },
+  "per_problem": {
+   "1": {
+    "sample_valid": 2,
+    "random_valid": 40,
+    "edge_valid": 8,
+    "large_valid": 4
+   },
+   "2": {
+    "sample_valid": 3,
+    "random_valid": 40,
+    "edge_valid": 15,
+    "large_valid": 4
+   },
+   "3": {
+    "sample_valid": 3,
+    "random_valid": 40,
+    "edge_valid": 9,
+    "large_valid": 4
+   },
+   "4": {
+    "sample_valid": 2,
+    "random_valid": 40,
+    "edge_valid": 7,
+    "large_valid": 4
+   },
+   "5": {
+    "sample_valid": 2,
+    "random_valid": 40,
+    "edge_valid": 9,
+    "large_valid": 4
+   },
+   "6": {
+    "sample_valid": 1,
+    "random_valid": 40,
+    "edge_valid": 8,
+    "large_valid": 4
+   },
+   "7": {
+    "sample_valid": 4,
+    "random_valid": 40,
+    "edge_valid": 11,
+    "large_valid": 4
+   },
+   "8": {
+    "sample_valid": 2,
+    "random_valid": 40,
+    "edge_valid": 5,
+    "large_valid": 4
+   },
+   "9": {
+    "sample_valid": 2,
+    "random_valid": 40,
+    "edge_valid": 4,
+    "large_valid": 4
+   },
+   "10": {
+    "sample_valid": 1,
+    "random_valid": 40,
+    "edge_valid": 4,
+    "large_valid": 4
+   },
+   "11": {
+    "sample_valid": 3,
+    "random_valid": 40,
+    "edge_valid": 7,
+    "large_valid": 4
+   },
+   "12": {
+    "sample_valid": 2,
+    "random_valid": 40,
+    "edge_valid": 4,
+    "large_valid": 4
+   },
+   "13": {
+    "sample_valid": 1,
+    "random_valid": 40,
+    "edge_valid": 5,
+    "large_valid": 4
+   }
+  }
+ },
+ "inputs_kept_per_problem": {
+  "1": {
+   "sample": 2,
+   "random": 40,
+   "edge": 8,
+   "large": 4
+  },
+  "2": {
+   "sample": 3,
+   "random": 40,
+   "edge": 15,
+   "large": 4
+  },
+  "3": {
+   "sample": 3,
+   "random": 40,
+   "edge": 9,
+   "large": 4
+  },
+  "4": {
+   "sample": 2,
+   "random": 40,
+   "edge": 7,
+   "large": 4
+  },
+  "5": {
+   "sample": 2,
+   "random": 40,
+   "edge": 9,
+   "large": 4
+  },
+  "6": {
+   "sample": 1,
+   "random": 40,
+   "edge": 8,
+   "large": 4
+  },
+  "7": {
+   "sample": 4,
+   "random": 40,
+   "edge": 11,
+   "large": 4
+  },
+  "8": {
+   "sample": 2,
+   "random": 40,
+   "edge": 5,
+   "large": 4
+  },
+  "9": {
+   "sample": 2,
+   "random": 40,
+   "edge": 4,
+   "large": 4
+  },
+  "10": {
+   "sample": 1,
+   "random": 40,
+   "edge": 4,
+   "large": 4
+  },
+  "11": {
+   "sample": 3,
+   "random": 40,
+   "edge": 7,
+   "large": 4
+  },
+  "12": {
+   "sample": 2,
+   "random": 40,
+   "edge": 4,
+   "large": 4
+  },
+  "13": {
+   "sample": 1,
+   "random": 40,
+   "edge": 5,
+   "large": 4
+  }
+ },
+ "candidates_dropped_per_problem": {
+  "1": 0,
+  "2": 0,
+  "3": 0,
+  "4": 0,
+  "5": 0,
+  "6": 0,
+  "7": 0,
+  "8": 0,
+  "9": 0,
+  "10": 0,
+  "11": 0,
+  "12": 0,
+  "13": 0
+ },
+ "large_time_limits_s": {
+  "1": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "2": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "3": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "4": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "5": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "6": [
+   1.0,
+   7.244,
+   1.0,
+   6.959
+  ],
+  "7": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "8": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "9": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "10": [
+   1.0,
+   1.0,
+   1.0,
+   4.524
+  ],
+  "11": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "12": [
+   1.273,
+   1.337,
+   1.0,
+   1.22
+  ],
+  "13": [
+   2.498,
+   1.684,
+   2.551,
+   1.685
+  ]
+ },
+ "vs_preliminary_oracle2": {
+  "same_expected": 654,
+  "old_inputs_not_kept": 41,
+  "large_tl_changed": 9,
+  "new_input": 42
+ },
+ "verdict_by_oracle": {
+  "AC": {
+   "oracle_pass": 238
+  },
+  "WA": {
+   "oracle_fail": 450,
+   "oracle_pass": 41
+  },
+  "CE": {
+   "compile_fail": 77,
+   "oracle_fail": 4,
+   "oracle_pass": 1
+  },
+  "TLE": {
+   "oracle_fail": 128,
+   "oracle_pass": 88
+  },
+  "MLE": {
+   "oracle_fail": 19,
+   "oracle_pass": 1
+  }
+ },
+ "specificity_in_sample": {
+  "passing": 238,
+  "n": 238,
+  "rate_ci95": [
+   1.0,
+   0.9846,
+   1.0
+  ]
+ },
+ "specificity_leave_one_participant_out": {
+  "passing": 237,
+  "n": 238,
+  "rate_ci95": [
+   0.9958,
+   0.9768,
+   0.9999
+  ],
+  "participants": 21,
+  "participants_all_passing": 20
+ },
+ "sensitivity": {
+  "WA": {
+   "per_submission": {
+    "failing": 450,
+    "n": 491,
+    "rate_ci95": [
+     0.9165,
+     0.8884,
+     0.9394
+    ]
+   },
+   "per_distinct_program": {
+    "failing": 425,
+    "n": 463,
+    "rate_ci95": [
+     0.9179,
+     0.8891,
+     0.9413
+    ],
+    "mixed_outcome": 0
+   },
+   "participants": 21,
+   "not_compiling_here": 0
+  },
+  "TLE": {
+   "per_submission": {
+    "failing": 128,
+    "n": 216,
+    "rate_ci95": [
+     0.5926,
+     0.5239,
+     0.6588
+    ]
+   },
+   "per_distinct_program": {
+    "failing": 116,
+    "n": 193,
+    "rate_ci95": [
+     0.601,
+     0.5282,
+     0.6707
+    ],
+    "mixed_outcome": 0
+   },
+   "participants": 19,
+   "not_compiling_here": 0
+  },
+  "MLE": {
+   "per_submission": {
+    "failing": 19,
+    "n": 20,
+    "rate_ci95": [
+     0.95,
+     0.7513,
+     0.9987
+    ]
+   },
+   "per_distinct_program": {
+    "failing": 19,
+    "n": 20,
+    "rate_ci95": [
+     0.95,
+     0.7513,
+     0.9987
+    ],
+    "mixed_outcome": 0
+   },
+   "participants": 9,
+   "not_compiling_here": 0
+  }
+ },
+ "sensitivity_v1_inputs_only": {
+  "WA": {
+   "per_submission": {
+    "failing": 429,
+    "n": 491,
+    "rate_ci95": [
+     0.8737,
+     0.8411,
+     0.9018
+    ]
+   },
+   "per_distinct_program": {
+    "failing": 406,
+    "n": 463,
+    "rate_ci95": [
+     0.8769,
+     0.8435,
+     0.9054
+    ],
+    "mixed_outcome": 0
+   },
+   "participants": 21,
+   "not_compiling_here": 0
+  },
+  "TLE": {
+   "per_submission": {
+    "failing": 25,
+    "n": 216,
+    "rate_ci95": [
+     0.1157,
+     0.0763,
+     0.1661
+    ]
+   },
+   "per_distinct_program": {
+    "failing": 24,
+    "n": 193,
+    "rate_ci95": [
+     0.1244,
+     0.0813,
+     0.1794
+    ],
+    "mixed_outcome": 0
+   },
+   "participants": 19,
+   "not_compiling_here": 0
+  }
+ },
+ "tle_with_large_timeout": {
+  "n": 123,
+  "of": 216
+ },
+ "wa_passing_classification": {
+  "n": 41,
+  "distinct_programs": 38,
+  "repeated_submissions": 3,
+  "participants": 11,
+  "by_problem": {
+   "6": 3,
+   "10": 14,
+   "11": 24
+  },
+  "by_language": {
+   "C": 8,
+   "Java": 14,
+   "C++": 19
+  },
+  "classes": {
+   "5_multiple_valid_outputs": 0,
+   "6_unexplained_possible_edge_case_not_in_oracle": 41
+  },
+  "ub_checked": 27,
+  "note": "Ordered rules; the oracle was not revised on these submissions. 'Formatting' = output equal under the comparator but not token- or line-identical where all agreeing Accepted outputs were identical."
+ },
+ "settings": {
+  "workers_build": 2,
+  "workers_score": 2,
+  "large_runs": 3,
+  "accepted_cap_s": 20.0,
+  "small_tl_s": 6.0,
+  "large_tl_rule": "max(1 s, 2 x slowest Accepted median of 3)",
+  "c_cpp_stack": "unlimited",
+  "java_stack": "256 MB",
+  "comparator": "integers exact; problem 6 abs 1e-3"
+ },
+ "machine": {
+  "cpu": "12th Gen Intel(R) Core(TM) i7-12700K",
+  "logical_cpus": 12,
+  "os": "Linux-6.18.58.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "python": "3.10.12",
+  "gcc": "gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+  "java": "openjdk version \"11.0.32.1\" 2026-08-18"
+ },
+ "freeze_manifest_sha256": {
+  "gens/1.py": "89fc46fee4473a06469de97af29c16160e5b6ae63e9f94da173bf6cb41ea5bbf",
+  "gens/10.py": "63a192fc3d4787ec7b054b691705a5d3836208c5f5b9cda50301a5a2508992ac",
+  "gens/10x.py": "571cf683591f0ca273206fc8f97fcbd5aa3ed586b380df6cbcbc0be5c8c9bc21",
+  "gens/11.py": "7b060d52fa00cb83de2fd3ba84df9d9d73b52983f5c4cade01fb9176313790d5",
+  "gens/11x.py": "be70257c7770879803803943f22ef492ed3b9bd538f76ae81daf6af91349b8f0",
+  "gens/12.py": "2ef91ab5c1ca95218da77e89fef7f212f74601ee1f0412a69ed0b3bfda4e9a21",
+  "gens/12x.py": "80da04643230b09890886f464e4332b8f25ce5c96f97e42ff955a5e3ca52f2ae",
+  "gens/13.py": "6e6c4608c3ca8b058bffa0235877f43699f249537c527a8b072ac4246b556483",
+  "gens/13x.py": "7b4972d813f8aa9e4a57e4699cb8fd9c70e4001f2a8179605b5a4fce0d29556b",
+  "gens/1x.py": "a07380096af87d02a4671ad7e180f2d931039cb2bff2f311e69f0746fb12aafd",
+  "gens/2.py": "767faaca0e6f29f5b6146d94da9bfcbacd35f1e63961427e6707da3c828bb6eb",
+  "gens/2x.py": "e0acb13971fa8c46863864b459417ed150bd69b36e92292bf33f5b1204a5413d",
+  "gens/3.py": "900e64c5a37a8d8b44c2f0ff7e0b4bce34e7ba70ce64e21965da57b43db69d65",
+  "gens/3x.py": "0c618d858d99afa9095adae208c6f8d8f6f50ab72fc4c2e434ba851512ea996a",
+  "gens/4.py": "6a44da2917f834c03eda0a895bea6fa4929ccc64af32b110545f08593b092d84",
+  "gens/4x.py": "48c7804ec7c498bb6a9942c71fd1b9c4477b247023c24c75c99d699170335846",
+  "gens/5.py": "e3f587344657a89a013545853da26c429b726ecc7803aa36831f27de045fe8ab",
+  "gens/5x.py": "7fb9726595912f8f46f4a0254f6462ce593e81967ec9a1412bca2ce94efe8656",
+  "gens/6.py": "ea447ad42102be91a63095f641e9725021140c21e1c83d47c673f91c0faccb3c",
+  "gens/6x.py": "35aa916d3e141e0fb251a65810be7afd9606bac822249e3425089b8bdcb68df2",
+  "gens/7.py": "8ba6b8ed2e7cad0c434daa939c554db6b7b609309effb5a6a3ac2945fcc2aee1",
+  "gens/7x.py": "20d77612e2e4f2ba0ed5fa99df05105d6e23673370d2ad0807dadfc8e9bfd5a6",
+  "gens/8.py": "18e7f5ec3a5f399da8c225039fcafc86a0ef9d3c3ad412e2f263a4edf43c83d5",
+  "gens/8x.py": "af411667eeeafe68b3d1914a82d7f3f8a9c438bd9df81bd7fa127f7a0f277e08",
+  "gens/9.py": "0f48191d1ec36903d57952d27031eb0b1130eee43700dc4737294be075853396",
+  "gens/9x.py": "47069015ef05000f5a8f1b1485ca3c5fe98df2c568f8916e79feac601bec5ba4",
+  "gens/_mk.py": "e97bca09c072522870c3b79efbb0ff1a33cdca4cf7ff515aed09880d9e9461d0",
+  "gens/_mk_x.py": "6fc07ff2fbb57f97dcf442f4668d1445dcc89aef92c539837d113ab05fb74a79",
+  "v2freeze/oracle2_frozen.json": "ec9767f740ef97c65bb2ba4ff7c133b66f9958de38ee3324853e22ea9c54a9b8",
+  "tools/tlt_pck_validate.py": "4060d94b01fb38be970ac003c1f44317f6aebad86da35929fbb3145108098253",
+  "tools/tlt_pck_oracle2_freeze.py": "37c0a580ca596231548473f652d04825254ad99173ac8688464c9edebe8a3889",
+  "tools/tlt_pck_difftest.py": "5cf39fbcf3ba35ea01a2416087b2b05c3b49de25f5aaee8eb4c2ef9a40a427a7",
+  "pck_statements/1.md": "ba00781770e7caed2a89fa0ad9a31998f3da120fddad54663b85f3b3dec3b1d2",
+  "pck_statements/2.md": "68d795d72d3439fa635ee98da8a598b77afc215f537f1520a9a62a404c0ab4ad",
+  "pck_statements/3.md": "a23ec2a1e6d0e80d4bd6f4602767b2cfa84225281001ca12d6f27a87767c6022",
+  "pck_statements/4.md": "de9d6fb677ad9f165870d018ee1356f81ce94459d1979a837a56728379f50035",
+  "pck_statements/5.md": "4cd4c2e9a4baca260fa193c6f9db76a4852ec665831cb6546ba32978cdfd2952",
+  "pck_statements/6.md": "e5d78cd2cc3374ac93677206069f970e07107072d331329ec91eaf0ad018803b",
+  "pck_statements/7.md": "e930abaad634d4bad49a9ca3b17fd02c7ad324027db57b05591fbfa5400ef680",
+  "pck_statements/8.md": "012e7c2ef53aaec57510de1a05ba661446b74907b9553c4bb1a84868c20a08e2",
+  "pck_statements/9.md": "c83fbf1ef5d414914fcbd4da75dc6e70bd317b5b551ef0f4e0696a4e5c96b0fd",
+  "pck_statements/10.md": "75a7294984e9c3189d012b7e007db70506de4705077f3fa509096fce5376e891",
+  "pck_statements/11.md": "b18b2af8ef9f60ecd3ab6cbce42de4acde7b254dd17cea2fb3832fba32769d54",
+  "pck_statements/12.md": "1088b49d376b8898441936b8dba469c588faf8a4dce7cfdd97f7ca06646a6bf9",
+  "pck_statements/13.md": "486db45471173225d6f6ac1748d4a5277d1067614b4ff093d7f3cf8bf0c8ca63"
+ }
+}

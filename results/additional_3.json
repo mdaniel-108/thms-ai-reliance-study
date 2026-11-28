@@ -1,0 +1,227 @@
+{
+ "note": "Additional checks V1-V4. Aggregates only.",
+ "V1_echo": {
+  "used_decisions": 477,
+  "similarity_answer_to_failed_program": {
+   "n": 477,
+   "median": 0.5,
+   "q1": 0.3,
+   "q3": 0.8
+  },
+  "share_new_tokens_in_answer": {
+   "n": 477,
+   "median": 0.5,
+   "q1": 0.2,
+   "q3": 0.7
+  },
+  "echo_ge_099": {
+   "k": 4,
+   "n": 477,
+   "rate": 0.0084,
+   "lo": 0.0,
+   "hi": 0.0206,
+   "participants": 20
+  },
+  "near_echo_095_099": {
+   "k": 30,
+   "n": 477,
+   "rate": 0.0629,
+   "lo": 0.038,
+   "hi": 0.0913,
+   "participants": 20
+  },
+  "echo_by_class": {
+   "correct": 3,
+   "wrong_detectable": 0,
+   "wrong_undetectable": 1
+  },
+  "echo_among_ai_rejections": {
+   "k": 2,
+   "n": 378
+  },
+  "without_echo": {
+   "decisions": 493,
+   "participants": 20,
+   "unchanged": {
+    "k": 464,
+    "n": 493,
+    "rate": 0.9412,
+    "lo": 0.9012,
+    "hi": 0.9684,
+    "participants": 20
+   },
+   "over_reliance": {
+    "k": 305,
+    "n": 493,
+    "rate": 0.6187,
+    "lo": 0.5533,
+    "hi": 0.6682,
+    "participants": 20
+   },
+   "ai_rejections": 376
+  },
+  "without_echo_or_near_echo": {
+   "decisions": 463,
+   "participants": 20,
+   "unchanged": {
+    "k": 434,
+    "n": 463,
+    "rate": 0.9374,
+    "lo": 0.8934,
+    "hi": 0.9664,
+    "participants": 20
+   },
+   "over_reliance": {
+    "k": 289,
+    "n": 463,
+    "rate": 0.6242,
+    "lo": 0.5577,
+    "hi": 0.6764,
+    "participants": 20
+   },
+   "ai_rejections": 349
+  },
+  "rq1_answers_echoing_failed_program": {
+   "k": 4,
+   "n": 587,
+   "correct_among_echo": 3
+  },
+  "rq1_correct_without_echo": {
+   "k": 177,
+   "n": 583,
+   "rate": 0.3036,
+   "lo": 0.266,
+   "hi": 0.3449,
+   "participants": 20
+  }
+ },
+ "V2_escalation_availability": {
+  "base_rate_consecutive_requests": {
+   "n": 1551,
+   "up_any": 197,
+   "down_any": 0,
+   "n_higher_available": 511,
+   "up": 197
+  },
+  "ai_rejection": {
+   "n": 310,
+   "up": 65,
+   "down": 0,
+   "same": 245,
+   "higher_available": 106,
+   "new_stage_unlocked_since_previous": 63,
+   "up_given_available": {
+    "k": 65,
+    "n": 106,
+    "rate": 0.6132,
+    "lo": 0.449,
+    "hi": 0.77,
+    "participants": 16
+   }
+  },
+  "other_failure": {
+   "n": 176,
+   "up": 17,
+   "down": 0,
+   "same": 159,
+   "higher_available": 36,
+   "new_stage_unlocked_since_previous": 23,
+   "up_given_available": {
+    "k": 17,
+    "n": 36,
+    "rate": 0.4722,
+    "lo": 0.2903,
+    "hi": 0.6667,
+    "participants": 15
+   }
+  },
+  "gee_up_given_available_ai_vs_other": {
+   "OR": 1.772,
+   "lo": 0.704,
+   "hi": 4.462,
+   "n": 142,
+   "participants": 17
+  },
+  "gee_up_given_available_ai_vs_other_adj_k": {
+   "OR": 1.364,
+   "lo": 0.484,
+   "hi": 3.841
+  },
+  "up_given_available_by_k": {
+   "0": {
+    "k": 4,
+    "n": 16,
+    "rate": 0.25,
+    "lo": 0.0588,
+    "hi": 0.5,
+    "participants": 12
+   },
+   "1": {
+    "k": 18,
+    "n": 29,
+    "rate": 0.6207,
+    "lo": 0.4545,
+    "hi": 0.7576,
+    "participants": 13
+   },
+   "2": {
+    "k": 13,
+    "n": 23,
+    "rate": 0.5652,
+    "lo": 0.3333,
+    "hi": 0.7917,
+    "participants": 14
+   },
+   "3": {
+    "k": 47,
+    "n": 74,
+    "rate": 0.6351,
+    "lo": 0.4433,
+    "hi": 0.8525,
+    "participants": 11
+   }
+  }
+ },
+ "V3_exact": {
+  "unchanged": 468,
+  "token_identical": 463,
+  "identical_ignoring_whitespace": 463,
+  "unchanged_exact_rate": {
+   "k": 463,
+   "n": 497,
+   "rate": 0.9316,
+   "lo": 0.8858,
+   "hi": 0.962,
+   "participants": 20
+  },
+  "over_reliance_unchanged_exact": 298,
+  "over_reliance_unchanged_near_only": 3,
+  "note": "over-reliance does not depend on the unchanged/adapted split (both count as used)"
+ },
+ "V4_stage_composition": {
+  "1": {
+   "answers": 295,
+   "participants": 19,
+   "problems": 13,
+   "median_request_number": 4.0,
+   "correct": 44,
+   "top_problem_share": 0.159
+  },
+  "2": {
+   "answers": 171,
+   "participants": 17,
+   "problems": 13,
+   "median_request_number": 8.0,
+   "correct": 80,
+   "top_problem_share": 0.211
+  },
+  "3+": {
+   "answers": 121,
+   "participants": 13,
+   "problems": 10,
+   "median_request_number": 14.0,
+   "correct": 56,
+   "top_problem_share": 0.289
+  }
+ }
+}

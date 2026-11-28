@@ -1,0 +1,34 @@
+{
+ "note": "Within-participant comparison of stage 1 with stages 2-5 (participants with decisions at both).",
+ "participants": 16,
+ "unchanged": {
+  "stage_1": {
+   "k": 214,
+   "n": 228,
+   "rate": 0.9386
+  },
+  "stages_2_5": {
+   "k": 241,
+   "n": 255,
+   "rate": 0.9451
+  },
+  "participants_higher_later": 8,
+  "participants_lower_later": 2,
+  "participants_equal": 6
+ },
+ "over_reliance": {
+  "stage_1": {
+   "k": 181,
+   "n": 228,
+   "rate": 0.7939
+  },
+  "stages_2_5": {
+   "k": 117,
+   "n": 255,
+   "rate": 0.4588
+  },
+  "participants_higher_later": 2,
+  "participants_lower_later": 13,
+  "participants_equal": 1
+ }
+}

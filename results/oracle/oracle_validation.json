@@ -1,0 +1,130 @@
+{
+ "v1_correctness": {
+  "AC": {
+   "oracle_pass": 238
+  },
+  "WA": {
+   "oracle_fail": 428,
+   "oracle_pass": 63
+  },
+  "CE": {
+   "compile_fail": 77,
+   "oracle_fail": 4,
+   "oracle_pass": 1
+  },
+  "TLE": {
+   "oracle_fail": 25,
+   "oracle_pass": 191
+  },
+  "MLE": {
+   "oracle_fail": 11,
+   "oracle_pass": 9
+  }
+ },
+ "v2_full": {
+  "AC": {
+   "oracle_pass": 234,
+   "oracle_fail": 4
+  },
+  "WA": {
+   "oracle_fail": 449,
+   "oracle_pass": 42
+  },
+  "CE": {
+   "compile_fail": 77,
+   "oracle_fail": 4,
+   "oracle_pass": 1
+  },
+  "TLE": {
+   "oracle_fail": 128,
+   "oracle_pass": 88
+  },
+  "MLE": {
+   "oracle_fail": 19,
+   "oracle_pass": 1
+  }
+ },
+ "wa_caught_by_new_inputs": 21,
+ "tle_with_large_timeout": 123,
+ "inputs_per_problem": {
+  "1": {
+   "sample": 2,
+   "random": 40,
+   "edge": 8,
+   "large": 4
+  },
+  "2": {
+   "sample": 3,
+   "random": 40,
+   "edge": 15,
+   "large": 4
+  },
+  "3": {
+   "sample": 3,
+   "random": 40,
+   "edge": 9,
+   "large": 4
+  },
+  "4": {
+   "sample": 2,
+   "random": 40,
+   "edge": 7,
+   "large": 4
+  },
+  "5": {
+   "sample": 2,
+   "random": 40,
+   "edge": 9,
+   "large": 4
+  },
+  "6": {
+   "sample": 1,
+   "random": 40,
+   "edge": 8,
+   "large": 4
+  },
+  "7": {
+   "sample": 4,
+   "random": 40,
+   "edge": 11,
+   "large": 4
+  },
+  "8": {
+   "sample": 2,
+   "random": 39,
+   "edge": 5,
+   "large": 4
+  },
+  "9": {
+   "sample": 2,
+   "random": 40,
+   "edge": 4,
+   "large": 4
+  },
+  "10": {
+   "sample": 1,
+   "random": 40,
+   "edge": 4,
+   "large": 4
+  },
+  "11": {
+   "sample": 3,
+   "random": 40,
+   "edge": 7,
+   "large": 4
+  },
+  "12": {
+   "sample": 2,
+   "random": 40,
+   "edge": 4,
+   "large": 4
+  },
+  "13": {
+   "sample": 1,
+   "random": 40,
+   "edge": 5,
+   "large": 4
+  }
+ },
+ "note": "Oracle v2: samples, 40 random, edge cases and 4 maximum-size inputs per problem, kept where >=3 Accepted programs agree; large inputs timed at max(1 s, 2x slowest Accepted runtime). Accepted programs pass by construction on untimed inputs. Aggregates only."
+}
