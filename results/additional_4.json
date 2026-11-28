@@ -1,0 +1,41 @@
+{
+ "T1_answer_before_next_submission": {
+  "unchanged": {
+   "n": 468,
+   "before_next": 468,
+   "negative": 0,
+   "min_seconds": 6.6
+  },
+  "not_used": {
+   "n": 20,
+   "before_next": 20,
+   "negative": 0,
+   "min_seconds": 10.5
+  },
+  "adapted": {
+   "n": 9,
+   "before_next": 9,
+   "negative": 0,
+   "min_seconds": 13.3
+  }
+ },
+ "T2_loops_with_no_further_submission": {
+  "n": 12,
+  "participant_submitted_nothing_afterwards": 5,
+  "within_30_min_of_last_session_submission": 8,
+  "minutes_before_last_session_submission": [
+   0.1,
+   0.6,
+   1.0,
+   1.8,
+   2.1,
+   9.2,
+   12.8,
+   16.8,
+   41.6,
+   50.1,
+   93.7,
+   114.2
+  ]
+ }
+}

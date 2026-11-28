@@ -36,7 +36,7 @@ All numbers below are in [`results/results.json`](results/results.json) unless a
 
 Two minimum-size gates were not met: G1 (only 9 adapted decisions, against a minimum of 50) and G2 (the under-reliance cell held 4
 decisions from 4 participants, against 30 from 8). RQ2 is therefore reported descriptively. The additional analyses (response to rejection, echo, escalation,
-timing and weighting) are in `results/additional_1.json` to `additional_3.json`.
+timing and weighting, answer arrival before the next submission, loop ends) are in `results/additional_1.json` to `additional_4.json`.
 
 ## Figures
 
@@ -111,7 +111,7 @@ script that made it. Input locations are set in [`code/config.py`](code/config.p
 | 4. Scoring | `study2_score.py answers` (self-test: `selftest`) | Oracle scores of every scorable answer |
 | 5. Main analyses | `study2_analyse.py` | RQ1–RQ4 (`results/results.json`) |
 | 6. Baseline B2 | `study2_b2_generate.py` (local models, statement only), `study2_score.py b2`, `study2_b2_analyse.py` | `results/b2_results.json` |
-| 7. Additional analyses | `study2_additional1.py`, `study2_additional2.py`, `study2_additional3.py` | `results/additional_1.json`, `additional_2.json`, `additional_3.json` |
+| 7. Additional analyses | `study2_additional1.py`, `study2_additional2.py`, `study2_additional3.py`, `study2_additional4.py` | `results/additional_1.json` to `additional_4.json` |
 | 8. Figures | `study2_figures.py` | `figures/*.pdf` |
 | Release tables | `export_pseudonymised.py` | `data/answers.csv`, `data/decisions.csv` |
 
