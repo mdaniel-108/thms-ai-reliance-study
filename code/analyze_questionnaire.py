@@ -194,7 +194,7 @@ def main() -> None:
         if unclear:
             quality.append({"item": item, "issue": f"code(s) not on the printed form: "
                                                    f"{', '.join(sorted({str(u) for u in unclear}))}",
-                            "count": len(unclear), "handling": "excluded as unclear (codebook needed)"})
+                            "count": len(unclear), "handling": "excluded as unclear"})
         if item in EXCLUSIVE:
             ex = EXCLUSIVE[item]
             contradictory = sum(1 for v in valid if ex in v and len(v) > 1)
