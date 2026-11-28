@@ -1,0 +1,51 @@
+{
+ "note": "Same-request echo: under half of the next submission's tokens matched by the answer and not by participant text of the same request.",
+ "used_decisions": 477,
+ "with_request_text": 477,
+ "same_request_echo": 110,
+ "same_request_echo_participants": 13,
+ "same_request_echo_by_use": {
+  "unchanged": 107,
+  "adapted": 3
+ },
+ "same_request_echo_by_class": {
+  "correct": 28,
+  "wrong_detectable": 54,
+  "wrong_undetectable": 28
+ },
+ "same_request_echo_among_over_reliance": 82,
+ "new_share_median": 0.8601,
+ "new_share_q1": 0.5278,
+ "all_decisions": {
+  "unchanged": {
+   "k": 468,
+   "n": 497,
+   "rate": 0.9416,
+   "lo": 0.9026,
+   "hi": 0.9687
+  },
+  "over_reliance": {
+   "k": 306,
+   "n": 497,
+   "rate": 0.6157,
+   "lo": 0.5484,
+   "hi": 0.6672
+  }
+ },
+ "without_same_request_echo": {
+  "unchanged": {
+   "k": 361,
+   "n": 387,
+   "rate": 0.9328,
+   "lo": 0.8873,
+   "hi": 0.9616
+  },
+  "over_reliance": {
+   "k": 224,
+   "n": 387,
+   "rate": 0.5788,
+   "lo": 0.5046,
+   "hi": 0.6324
+  }
+ }
+}

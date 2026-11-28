@@ -2,7 +2,7 @@ r"""Study 2 figures for the manuscript, from aggregate outputs only.
 
   python -I code/study2_figures.py
 
-Inputs: results/{results,additional_1,additional_2}.json. Output: figures/*.pdf
+Inputs: results/{results,additional_1,additional_2,use_by_class_and_stage}.json. Output: figures/*.pdf
 """
 import json, os
 import numpy as np
@@ -199,3 +199,39 @@ ax.set_xticks(x); ax.set_xticklabels([l for _, l in names], fontsize=6.2); ax.se
 ax.legend(frameon=False, ncol=3, fontsize=6, loc="upper center")
 save(fig, "F11_weighting.pdf")
 print("figures written to", os.path.abspath(FIG))
+
+# Fig. 12: use by answer class (a); correctness, unchanged use and over-reliance by stage (b)
+UC = json.load(open(os.path.join(O, "use_by_class_and_stage.json")))
+fig, ax = plt.subplots(1, 2, figsize=(W2, 2.15), gridspec_kw=dict(width_ratios=[1, 1.25]))
+cls = [("correct", "Correct"), ("wrong_sample_failing", "Wrong,\nfails sample"), ("wrong_sample_passing", "Wrong,\npasses samples")]
+x = np.arange(3); bottom = np.zeros(3)
+for j, (u, lab) in enumerate((("unchanged", "Unchanged"), ("adapted", "Adapted"), ("not_used", "Not used"))):
+    n = np.array([UC["use_by_class"][c]["n"] for c, _ in cls], float)
+    k = np.array([UC["use_by_class"][c][u] for c, _ in cls])
+    val = k / n * 100
+    ax[0].bar(x, val, 0.6, bottom=bottom, color="white", edgecolor=C[j], hatch=H[j], lw=0.9, label=lab)
+    for i in range(3):
+        if u == "unchanged":
+            ax[0].text(x[i], bottom[i] + val[i] / 2, f"{k[i]}/{int(n[i])}", ha="center", va="center", fontsize=6.3)
+    bottom += val
+for i, (c, _) in enumerate(cls):
+    nu = UC["use_by_class"][c]["adapted"] + UC["use_by_class"][c]["not_used"]
+    ax[0].text(x[i], 101.5, f"{nu} other", ha="center", va="bottom", fontsize=6.3)
+ax[0].set_xticks(x); ax[0].set_xticklabels([l for _, l in cls]); ax[0].set_ylim(0, 112)
+ax[0].set_ylabel("Share of decisions (%)"); ax[0].set_title("(a) Use of the answer by answer class")
+ax[0].legend(loc="upper center", bbox_to_anchor=(0.5, -0.3), ncol=3, frameon=False)
+st = [("1", "1"), ("2", "2"), ("3+", "3-5")]
+series = [("Correct answers", [pct(R["RQ1"]["correct_by_stage"][a]) for a, _ in st], "o", C[0]),
+          ("Unchanged use", [pct(UC["by_stage"][b]["unchanged"]) for _, b in st], "s", C[1]),
+          ("Over-reliance", [pct(UC["by_stage"][b]["over_reliance"]) for _, b in st], "^", C[3])]
+for j, (lab, v, mk, col) in enumerate(series):
+    xs = np.arange(3) + (j - 1) * 0.08
+    m = np.array([a for a, _, _ in v]); lo = m - np.array([b for _, b, _ in v]); hi = np.array([c for _, _, c in v]) - m
+    ax[1].errorbar(xs, m, yerr=[lo, hi], fmt=mk + "-", color=col, mfc="white", lw=0.9, ms=4, capsize=2, label=lab)
+    dy = {0: -7, 1: 6, 2: 7}[j]; dx = {0: 0.1, 1: 0.1, 2: 0.1}[j]
+    for i in range(3):
+        ax[1].text(xs[i] + dx, m[i] + (dy if i > 0 or j == 1 else 0), f"{m[i]:.1f}", fontsize=6.3, color=col, va="center")
+ax[1].set_xticks(range(3)); ax[1].set_xticklabels(["Stage 1", "Stage 2", "Stages 3-5"]); ax[1].set_ylim(0, 105)
+ax[1].set_xlim(-0.3, 2.5); ax[1].set_ylabel("%"); ax[1].set_title("(b) By stage: answers (correct) and decisions")
+ax[1].legend(loc="upper center", bbox_to_anchor=(0.5, -0.3), ncol=3, frameon=False)
+save(fig, "F12_use_by_class_stage.pdf")

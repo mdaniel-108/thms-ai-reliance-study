@@ -19,6 +19,10 @@
    "min_seconds": 13.3
   }
  },
+ "T1b_all_answers_before_next_submission": {
+  "before_next": 878,
+  "no_next_submission": 17
+ },
  "T2_loops_with_no_further_submission": {
   "n": 12,
   "participant_submitted_nothing_afterwards": 5,

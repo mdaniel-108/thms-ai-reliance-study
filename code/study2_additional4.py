@@ -2,7 +2,7 @@ r"""Study 2, additional checks T1-T2.
 
   python -I code/study2_additional4.py
 
-T1 answer availability: for every decision, the proxy record of the attributed answer (for a not-used decision, the
+T1 answer availability: for every decision (T1b: for every answer after a failure), the proxy record of the attributed answer (for a not-used decision, the
    last scorable answer before the next submission) was created before the next submission
 T2 loops that ended with no further submission on the problem: whether the participant submitted anything afterwards,
    and how long before the last submission of the session the loop ended
@@ -37,6 +37,15 @@ def main():
         mins[x["use"]] = min(mins.get(x["use"], float("inf")), dt)
     res["T1_answer_before_next_submission"] = {
         k: dict(v, min_seconds=round(mins[k], 1)) for k, v in order.items()}
+    allc = collections.Counter()
+    for a in A:                      # every answer after a failure, not only the attributed ones
+        if a.get("next") is None:
+            allc["no_next_submission"] += 1
+        elif arr.get(a["rid"]) is None:
+            allc["no_proxy_record"] += 1
+        else:
+            allc["before_next" if arr[a["rid"]] < stime[a["next"]] else "not_before_next"] += 1
+    res["T1b_all_answers_before_next_submission"] = dict(allc)
 
     # ---------- T2 loops with no further submission ----------
     session_last = max(stime.values())

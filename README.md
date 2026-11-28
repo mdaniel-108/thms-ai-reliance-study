@@ -36,7 +36,7 @@ All numbers below are in [`results/results.json`](results/results.json) unless a
 
 Two minimum-size gates were not met: G1 (only 9 adapted decisions, against a minimum of 50) and G2 (the under-reliance cell held 4
 decisions from 4 participants, against 30 from 8). RQ2 is therefore reported descriptively. The additional analyses (response to rejection, echo, escalation,
-timing and weighting, answer arrival before the next submission, loop ends) are in `results/additional_1.json` to `additional_4.json`.
+timing and weighting, answer arrival before the next submission, loop ends, same-request echo, matched false-alarm rates, posterior predictive check) are in `results/additional_1.json` to `additional_6.json`.
 
 ## Figures
 
@@ -47,12 +47,19 @@ Captions follow the manuscript. Participants appear only as anonymous ranks, nev
 
 ![RQ1 by stage](figures/F4_rq1_stage.png)
 
+**RQ2.** (a) Use of the answer in the 497 decisions by answer class; bars give the counts of unchanged use, and adapted
+and not-used decisions are summed above each bar. (b) By stage, the share of runnable answers that were correct
+(answers) and the shares of decisions with unchanged use and with over-reliance (decisions), with participant-cluster
+95% intervals.
+
+![Use by class and stage](figures/F12_use_by_class_stage.png)
+
 **RQ2.** (a) Over-reliance under each correctness source; (b) per participant, ranked, marker size
 proportional to the number of decisions.
 
 ![Over-reliance](figures/F5_over_reliance.png)
 
-**RQ2.** Over-reliance events on the oracle per participant (ranked, anonymous) and problem.
+**RQ2.** Counts of over-reliance events on the oracle per participant (ranked, anonymous) and problem.
 
 ![Heatmap](figures/F8_heatmap.png)
 
@@ -96,6 +103,10 @@ of participants). Expected last line: `34 of 34 checks match results/results.jso
 in `results/within_stage.json`: unchanged use and over-reliance at stage 1 and at stages 2-5 for the participants
 with decisions at both.
 
+`python reproduce/use_by_class_and_stage.py` (standard library) recomputes `results/use_by_class_and_stage.json`: use
+of the answer by answer class, and correctness, unchanged use and over-reliance by stage, with participant-cluster
+bootstrap intervals.
+
 The figures are rebuilt from the JSON results with `python code/study2_figures.py` (NumPy, Matplotlib).
 
 ## Pipeline
@@ -111,7 +122,7 @@ script that made it. Input locations are set in [`code/config.py`](code/config.p
 | 4. Scoring | `study2_score.py answers` (self-test: `selftest`) | Oracle scores of every scorable answer |
 | 5. Main analyses | `study2_analyse.py` | RQ1–RQ4 (`results/results.json`) |
 | 6. Baseline B2 | `study2_b2_generate.py` (local models, statement only), `study2_score.py b2`, `study2_b2_analyse.py` | `results/b2_results.json` |
-| 7. Additional analyses | `study2_additional1.py`, `study2_additional2.py`, `study2_additional3.py`, `study2_additional4.py` | `results/additional_1.json` to `additional_4.json` |
+| 7. Additional analyses | `study2_additional1.py` to `study2_additional6.py` | `results/additional_1.json` to `additional_6.json` |
 | 8. Figures | `study2_figures.py` | `figures/*.pdf` |
 | Release tables | `export_pseudonymised.py` | `data/answers.csv`, `data/decisions.csv` |
 

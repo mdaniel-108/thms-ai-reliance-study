@@ -1,0 +1,94 @@
+{
+ "note": "Use by answer class (decisions) and rates by stage (correctness over runnable answers; unchanged use and over-reliance over decisions).",
+ "use_by_class": {
+  "correct": {
+   "n": 172,
+   "unchanged": 164,
+   "adapted": 4,
+   "not_used": 4
+  },
+  "wrong_sample_failing": {
+   "n": 185,
+   "unchanged": 172,
+   "adapted": 2,
+   "not_used": 11
+  },
+  "wrong_sample_passing": {
+   "n": 140,
+   "unchanged": 132,
+   "adapted": 3,
+   "not_used": 5
+  }
+ },
+ "by_stage": {
+  "1": {
+   "correct": {
+    "k": 44,
+    "n": 295,
+    "rate": 0.1492,
+    "lo": 0.0893,
+    "hi": 0.2145
+   },
+   "unchanged": {
+    "k": 222,
+    "n": 237,
+    "rate": 0.9367,
+    "lo": 0.8936,
+    "hi": 0.9667
+   },
+   "over_reliance": {
+    "k": 187,
+    "n": 237,
+    "rate": 0.789,
+    "lo": 0.7087,
+    "hi": 0.8594
+   }
+  },
+  "2": {
+   "correct": {
+    "k": 80,
+    "n": 171,
+    "rate": 0.4678,
+    "lo": 0.3217,
+    "hi": 0.6178
+   },
+   "unchanged": {
+    "k": 147,
+    "n": 155,
+    "rate": 0.9484,
+    "lo": 0.8963,
+    "hi": 0.9898
+   },
+   "over_reliance": {
+    "k": 73,
+    "n": 155,
+    "rate": 0.471,
+    "lo": 0.3314,
+    "hi": 0.6038
+   }
+  },
+  "3-5": {
+   "correct": {
+    "k": 56,
+    "n": 121,
+    "rate": 0.4628,
+    "lo": 0.3684,
+    "hi": 0.5729
+   },
+   "unchanged": {
+    "k": 99,
+    "n": 105,
+    "rate": 0.9429,
+    "lo": 0.8974,
+    "hi": 0.9872
+   },
+   "over_reliance": {
+    "k": 46,
+    "n": 105,
+    "rate": 0.4381,
+    "lo": 0.2941,
+    "hi": 0.5575
+   }
+  }
+ }
+}
